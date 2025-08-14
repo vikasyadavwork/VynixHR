@@ -12,7 +12,9 @@ class AuthController:
     def sign_in(data):
         try:
             user_registered = db.session.execute(
-                select(UserModel).where(UserModel.email == data["email"])
+                select(UserModel).where(
+                    UserModel.email == data["email"].strip().lower()
+                )
             ).scalar_one_or_none()
 
             if (

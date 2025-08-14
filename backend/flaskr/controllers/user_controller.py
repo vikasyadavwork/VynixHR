@@ -5,11 +5,13 @@ from sqlalchemy.exc import NoResultFound, SQLAlchemyError
 from flaskr.db import db
 from flaskr.models.user_model import UserModel
 from flaskr.utils import generate_password
+from flaskr.hr_helpers import is_admin, require_admin
 
 
 class UserController:
     @staticmethod
     def get_all():
+        require_admin()
         try:
             return db.session.execute(select(UserModel)).scalars().all()
         except SQLAlchemyError:
@@ -17,6 +19,8 @@ class UserController:
 
     @staticmethod
     def get_by_id(user_id):
+        if str(get_jwt_identity()) != str(user_id) and not is_admin():
+            abort(403, message="You can only access your own account")
         try:
             return db.session.execute(
                 select(UserModel).where(UserModel.id == user_id)
@@ -28,6 +32,7 @@ class UserController:
 
     @staticmethod
     def create(data):
+        data["email"] = data["email"].strip().lower()
         try:
             user_registered = db.session.execute(
                 select(UserModel).where(

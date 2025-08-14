@@ -22,7 +22,7 @@ class TaskController:
                     TaskModel.created_at,
                     TagModel.name.label("tag_name"),
                 )
-                .where(user_id == user_id)
+                .where(TaskModel.user_id == user_id)
                 .join(TagModel, TaskModel.tag_id == TagModel.id)
                 .all()
             )
@@ -33,8 +33,6 @@ class TaskController:
     def create(data):
         try:
             user_id = get_jwt_identity()
-
-            print(data)
 
             create_data = {"user_id": user_id, **data}
 
@@ -50,7 +48,10 @@ class TaskController:
     def update(data, task_id):
         try:
             task = db.session.execute(
-                select(TaskModel).where(TaskModel.id == task_id)
+                select(TaskModel).where(
+                    TaskModel.id == task_id,
+                    TaskModel.user_id == get_jwt_identity(),
+                )
             ).scalar_one()
 
             task.title = data["title"]
@@ -69,7 +70,10 @@ class TaskController:
     def delete(task_id):
         try:
             task = db.session.execute(
-                select(TaskModel).where(TaskModel.id == task_id)
+                select(TaskModel).where(
+                    TaskModel.id == task_id,
+                    TaskModel.user_id == get_jwt_identity(),
+                )
             ).scalar_one()
 
             db.session.delete(task)

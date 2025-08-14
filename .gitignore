@@ -1,2 +1,29 @@
-﻿preview
-backend/migrations
+# Secrets and local data
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite*
+backend/instance/
+backend/migrations/
+# Dependencies and generated files
+.venv/
+venv/
+empulseenv/
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+.runtime/
+ai/model/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+# Editors and original screenshots
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+preview/

@@ -9,6 +9,7 @@ bp = Blueprint("users", __name__)
 
 @bp.route("/users")
 class Users(MethodView):
+    @jwt_required()
     @bp.response(200, UserSchema(many=True))
     def get(self):
         return UserController.get_all()
@@ -21,6 +22,7 @@ class Users(MethodView):
 
 @bp.route("/users/<user_id>")
 class UserById(MethodView):
+    @jwt_required()
     @bp.response(200, UserSchema)
     def get(self, user_id):
         return UserController.get_by_id(user_id)

@@ -5,6 +5,7 @@ from flaskr.db import db
 
 class UserModel(db.Model):
     __tablename__ = "users"
+    __table_args__ = {"sqlite_autoincrement": True}
 
     id: Mapped[int] = mapped_column(primary_key=True)
     username: Mapped[str] = mapped_column(
@@ -18,3 +19,4 @@ class UserModel(db.Model):
     tasks = relationship(
         "TaskModel", back_populates="user", cascade="all, delete-orphan"
     )
+    hr_profile = relationship("HRProfile", cascade="all, delete-orphan", uselist=False)
