@@ -1,0 +1,4 @@
+__pycache__/
+model/*.json
+!model/.gitkeep
+

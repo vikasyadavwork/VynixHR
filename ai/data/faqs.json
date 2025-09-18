@@ -1,0 +1,1210 @@
+{
+  "metadata": {
+    "name": "VynixHR fictional company policy FAQ",
+    "version": "1.0",
+    "scope": "All policies, limits, contacts, and examples are invented for this demonstration. They are not actual employer policies or legal, tax, or medical advice.",
+    "editorial_note": "AI-assisted sample content curated for this application. Replace and review it with your HR team before organizational use.",
+    "contact": "Use the HR team contact configured by your organization. This demo has no real HR inbox.",
+    "currency": "INR; all monetary amounts are fictional demo limits."
+  },
+  "faqs": [
+    {
+      "id": "leave-01",
+      "category": "Leave",
+      "question": "How do I request annual leave?",
+      "answer": "Demo policy: Open Time off, choose Annual leave, enter the dates and a short reason, then submit. Your reporting manager reviews the request; it is approved only when its status changes to Approved.",
+      "keywords": "apply request annual leave vacation time off holiday booking submit manager approval",
+      "aliases": [
+        "How can I book days off for a vacation?",
+        "How does applying for time off work?"
+      ]
+    },
+    {
+      "id": "leave-02",
+      "category": "Leave",
+      "question": "How many annual leave days are provided each year?",
+      "answer": "Demo policy: Full-time employees receive 18 annual leave days per calendar year. The sample workspace uses the configured annual allocation; HR confirms any joining-date adjustments.",
+      "keywords": "annual leave entitlement allowance allocation eighteen 18 days year prorated",
+      "aliases": [
+        "What is the annual vacation entitlement?"
+      ]
+    },
+    {
+      "id": "leave-03",
+      "category": "Leave",
+      "question": "What should I do if I am sick and cannot work?",
+      "answer": "Demo policy: Notify your manager before your usual start time when possible, then submit Sick leave in Time off. The sample annual sick-leave allocation is 12 days; ask HR for help if you cannot submit the request yourself.",
+      "keywords": "sick sickness ill illness unwell unable work notify manager sick leave call in"
+    },
+    {
+      "id": "leave-04",
+      "category": "Leave",
+      "question": "Can unused annual leave be carried forward?",
+      "answer": "Demo policy: Up to five unused annual leave days can carry into the next calendar year. Carried days must be used by 31 March; HR reviews any exception before they expire.",
+      "keywords": "unused annual leave carry forward rollover roll over five 5 expire march"
+    },
+    {
+      "id": "leave-05",
+      "category": "Leave",
+      "question": "How do I cancel an approved leave request?",
+      "answer": "Demo policy: Contact your manager or HR with the request dates and reason for cancellation. An approved request needs HR confirmation before your attendance and leave balance are corrected.",
+      "keywords": "cancel withdraw revoke approved leave request booked vacation cancellation"
+    },
+    {
+      "id": "leave-06",
+      "category": "Leave",
+      "question": "How far in advance should I request planned leave?",
+      "answer": "Demo policy: Request one or two planned leave days at least three working days ahead. For three or more consecutive days, give at least two weeks of notice so your team can arrange coverage.",
+      "keywords": "planned leave notice advance beforehand deadline two weeks three working days"
+    },
+    {
+      "id": "leave-07",
+      "category": "Leave",
+      "question": "Can I request a half-day of leave?",
+      "answer": "Demo policy: Half-day leave is allowed with manager approval. Add Morning or Afternoon in the request reason and ask HR to confirm the half-day deduction if the demo form only accepts whole dates.",
+      "keywords": "half day half-day morning afternoon short leave partial day"
+    },
+    {
+      "id": "leave-08",
+      "category": "Leave",
+      "question": "Where can I check my remaining leave balance?",
+      "answer": "Demo policy: Review your own leave summary in the HR workspace or ask HR for a confirmed balance. Pending requests are reservations, and the FAQ assistant cannot read or calculate your personal balance.",
+      "keywords": "check view find remaining available leave balance days left personal summary"
+    },
+    {
+      "id": "leave-09",
+      "category": "Leave",
+      "question": "Are weekends included in annual leave deductions?",
+      "answer": "Demo policy: This sample workspace counts every calendar date from the start date through the end date, including weekends. HR must confirm the correct policy and any adjustments before this demo is used for a real organization.",
+      "keywords": "weekend saturday sunday leave count deduction working days scheduled roster"
+    },
+    {
+      "id": "leave-10",
+      "category": "Leave",
+      "question": "What is the process for emergency leave?",
+      "answer": "Demo policy: Tell your manager as soon as it is practical and share the expected absence duration. Submit the appropriate leave request within two working days after returning, or ask HR for help.",
+      "keywords": "emergency sudden urgent absence unplanned leave family crisis process"
+    },
+    {
+      "id": "leave-11",
+      "category": "Leave",
+      "question": "What happens if my leave request is rejected?",
+      "answer": "Demo policy: Read the manager's reason and discuss alternative dates or coverage. You may submit a revised request; a rejected request does not authorize an absence.",
+      "keywords": "rejected denied refused leave request appeal reconsider alternatives"
+    },
+    {
+      "id": "leave-12",
+      "category": "Leave",
+      "question": "Can I take unpaid leave when my annual leave is exhausted?",
+      "answer": "Demo policy: Unpaid leave requires approval from your manager and HR before the absence. Ask HR to explain the fictional payroll and benefit impact for the approved dates.",
+      "keywords": "unpaid leave loss pay exhausted no balance insufficient annual leave"
+    },
+    {
+      "id": "attendance-01",
+      "category": "Attendance",
+      "question": "What are the usual working hours?",
+      "answer": "Demo policy: The default schedule is Monday to Friday, 9:00 AM to 6:00 PM, with a one-hour lunch break. Your employment arrangement or published shift roster may set a different schedule.",
+      "keywords": "working office business hours schedule shift nine 9 six 6 timing weekdays"
+    },
+    {
+      "id": "attendance-02",
+      "category": "Attendance",
+      "question": "How do I record my attendance?",
+      "answer": "Demo policy: Use Check in when you start work and Check out when you finish. Record only your own actual work times, and review the daily entry for accuracy.",
+      "keywords": "mark record attendance check in check out clock punch start finish work"
+    },
+    {
+      "id": "attendance-03",
+      "category": "Attendance",
+      "question": "What if I forget to check in or check out?",
+      "answer": "Demo policy: Send HR the affected date, actual start and end times, and a brief explanation. Your manager must confirm the correction before HR changes the attendance record.",
+      "keywords": "forgot missed missing checkin checkout check in check out attendance correction punch"
+    },
+    {
+      "id": "attendance-04",
+      "category": "Attendance",
+      "question": "What should I do if I will arrive late?",
+      "answer": "Demo policy: Notify your manager with your expected arrival time as soon as you know. Record the actual check-in time and discuss any coverage or schedule adjustment with your manager.",
+      "keywords": "late arriving delayed traffic tardy arrival lateness notify"
+    },
+    {
+      "id": "attendance-05",
+      "category": "Attendance",
+      "question": "Do I need approval before working overtime?",
+      "answer": "Demo policy: Get written manager approval before additional hours, including the reason and expected duration. HR confirms how approved extra hours are recorded under your demo employment arrangement.",
+      "keywords": "overtime additional extra hours approval work late longer"
+    },
+    {
+      "id": "attendance-06",
+      "category": "Attendance",
+      "question": "How are lunch and rest breaks handled?",
+      "answer": "Demo policy: The default day includes a one-hour lunch break and reasonable short rest breaks coordinated with your team. Keep coverage available and ask your manager about a shift-specific break schedule.",
+      "keywords": "lunch rest break breaks meal duration tea coffee"
+    },
+    {
+      "id": "attendance-07",
+      "category": "Attendance",
+      "question": "How do I request a shift change?",
+      "answer": "Demo policy: Send the proposed shift dates and coverage arrangement to your manager at least two working days ahead. Start the changed shift only after the roster owner confirms it.",
+      "keywords": "shift change swap switching roster exchange schedule"
+    },
+    {
+      "id": "attendance-08",
+      "category": "Attendance",
+      "question": "How do I report an incorrect attendance entry?",
+      "answer": "Demo policy: Contact HR with the date, the recorded time, and the correct time, and copy your manager for confirmation. Do not create duplicate check-ins to fix an earlier mistake.",
+      "keywords": "incorrect wrong attendance entry record discrepancy edit rectify correction"
+    },
+    {
+      "id": "attendance-09",
+      "category": "Attendance",
+      "question": "How is attendance recorded during business travel?",
+      "answer": "Demo policy: Record your work times normally when the system is available and note Business travel. If travel prevents check-in, share your approved itinerary and actual work times with your manager and HR.",
+      "keywords": "attendance business travel trip onsite visit journey checkin"
+    },
+    {
+      "id": "attendance-10",
+      "category": "Attendance",
+      "question": "Who can view employee attendance records?",
+      "answer": "Demo policy: Employees may view their own records; authorized managers and HR may access records needed for their roles. Attendance exports must stay within approved company systems.",
+      "keywords": "attendance visibility permission access view records privacy manager HR"
+    },
+    {
+      "id": "attendance-11",
+      "category": "Attendance",
+      "question": "What if the attendance system is unavailable?",
+      "answer": "Demo policy: Note your actual start and end times and report the outage to IT. Send the times to your manager and HR so they can record a verified correction after service returns.",
+      "keywords": "attendance system down unavailable outage offline broken failure"
+    },
+    {
+      "id": "attendance-12",
+      "category": "Attendance",
+      "question": "Can I check in on behalf of a colleague?",
+      "answer": "Demo policy: No. Each employee must record their own attendance. Report access problems to IT and ask HR for a verified correction instead of using another person's account.",
+      "keywords": "colleague coworker friend behalf proxy checkin buddy punch attendance"
+    },
+    {
+      "id": "payroll-01",
+      "category": "Payroll",
+      "question": "When is the monthly salary paid?",
+      "answer": "Demo policy: Monthly salaries are scheduled for the last working day of the month. If that date is a company holiday, payment is scheduled for the preceding working day.",
+      "keywords": "salary paid payment date payday pay day monthly last working month",
+      "aliases": [
+        "What day of the month is payday?"
+      ]
+    },
+    {
+      "id": "payroll-02",
+      "category": "Payroll",
+      "question": "Where can I download my payslip?",
+      "answer": "Demo policy: Request your own payslip from the authorized payroll contact or payroll portal configured by HR. The FAQ assistant cannot retrieve payslips or disclose salary amounts.",
+      "keywords": "download view access find payslip pay slip paycheck portal salary statement"
+    },
+    {
+      "id": "payroll-03",
+      "category": "Payroll",
+      "question": "How do I update my salary bank account?",
+      "answer": "Demo policy: Use HR's secure bank-detail update process and submit verification before the payroll cutoff. Never post account numbers, bank documents, or passwords in the FAQ chat.",
+      "keywords": "update change salary bank account details payment transfer secure"
+    },
+    {
+      "id": "payroll-04",
+      "category": "Payroll",
+      "question": "What is the monthly payroll cutoff date?",
+      "answer": "Demo policy: Approved payroll changes must reach HR by the 20th of the month. Changes submitted after cutoff usually move to the following payroll cycle unless HR confirms an exception.",
+      "keywords": "payroll cutoff cut off deadline twentieth 20th changes processing"
+    },
+    {
+      "id": "payroll-05",
+      "category": "Payroll",
+      "question": "What should I do if my salary has not arrived?",
+      "answer": "Demo policy: Check the scheduled pay date and your bank's processing status, then contact payroll through the approved channel. Share the month and issue description without exposing bank credentials in chat.",
+      "keywords": "salary not arrived missing unpaid delayed payment not received bank"
+    },
+    {
+      "id": "payroll-06",
+      "category": "Payroll",
+      "question": "How do I report a payslip error?",
+      "answer": "Demo policy: Contact payroll within five working days of receiving the payslip and identify the line item and month. Payroll will review supporting records and explain the correction timeline.",
+      "keywords": "payslip error incorrect mistake wrong discrepancy salary slip correction"
+    },
+    {
+      "id": "payroll-07",
+      "category": "Payroll",
+      "question": "What is the difference between gross and net pay?",
+      "answer": "Demo policy: Gross pay is the total earnings before deductions; net pay is the amount remaining after the deductions listed on a payslip. Ask payroll about your own statement; this FAQ does not calculate tax or personal pay.",
+      "keywords": "gross net pay difference earnings deductions take home meaning"
+    },
+    {
+      "id": "payroll-08",
+      "category": "Payroll",
+      "question": "How is a new joiner's first month pay handled?",
+      "answer": "Demo policy: A new joiner's first month is prorated using the start date and the demo payroll calendar. HR confirms the calculation and the payment cycle during onboarding.",
+      "keywords": "new joiner first month prorated pro rata joining starting salary partial"
+    },
+    {
+      "id": "payroll-09",
+      "category": "Payroll",
+      "question": "Are expense reimbursements part of base salary?",
+      "answer": "Demo policy: Approved business expense reimbursements are recorded separately from base salary. The reimbursement amount and payment cycle appear in the claim approval or payroll communication.",
+      "keywords": "expense reimbursement base salary separate earnings remuneration inclusion"
+    },
+    {
+      "id": "payroll-10",
+      "category": "Payroll",
+      "question": "How do I obtain an employment income certificate?",
+      "answer": "Demo policy: Ask HR through the secure employee-document process and state the certificate's purpose and required period. Allow five working days and verify the details before sharing it externally.",
+      "keywords": "income salary certificate proof employment earnings letter bank visa"
+    },
+    {
+      "id": "payroll-11",
+      "category": "Payroll",
+      "question": "Can the chatbot calculate my taxes or deductions?",
+      "answer": "Demo policy: No. This assistant only retrieves fictional HR FAQs and cannot calculate individual taxes, deductions, or take-home pay. Use your authorized payroll support or a qualified adviser for a real situation.",
+      "keywords": "calculate taxes deductions personal tax withholding advice chatbot income"
+    },
+    {
+      "id": "payroll-12",
+      "category": "Payroll",
+      "question": "Can I request a salary advance?",
+      "answer": "Demo policy: Salary advances are considered only through a confidential request to HR and finance. Approval is discretionary, and any repayment schedule must be agreed in writing before payment.",
+      "keywords": "salary advance early payment loan emergency advance repayment"
+    },
+    {
+      "id": "onboarding-01",
+      "category": "Onboarding",
+      "question": "What should I do before my first day?",
+      "answer": "Demo policy: Complete the joining checklist, verify your contact details, and send requested documents through HR's secure channel. Your welcome message explains your reporting time, location, and first-day contact.",
+      "keywords": "before first day preboarding prepare joining checklist starting welcome"
+    },
+    {
+      "id": "onboarding-02",
+      "category": "Onboarding",
+      "question": "Which documents are needed for onboarding?",
+      "answer": "Demo policy: HR requests identity verification, an emergency contact, relevant qualification records, and payroll setup information. Submit only the requested documents through the approved secure process, not the FAQ chat.",
+      "keywords": "joining onboarding documents identification qualifications paperwork required submit",
+      "aliases": [
+        "What joining paperwork does a new employee provide?"
+      ]
+    },
+    {
+      "id": "onboarding-03",
+      "category": "Onboarding",
+      "question": "Who meets me on my first day?",
+      "answer": "Demo policy: Your assigned onboarding buddy or reporting manager greets you at the time stated in the welcome message. Contact HR if the welcome message or meeting location is missing.",
+      "keywords": "first day meet greet buddy reporting arrival contact welcome"
+    },
+    {
+      "id": "onboarding-04",
+      "category": "Onboarding",
+      "question": "When will I receive a laptop and system access?",
+      "answer": "Demo policy: IT aims to provide an assigned laptop and core accounts on your first working day after the joining checklist is verified. Report any missing access to your manager and IT.",
+      "keywords": "new joiner receive laptop equipment system account access provision first day"
+    },
+    {
+      "id": "onboarding-05",
+      "category": "Onboarding",
+      "question": "How long is the demo probation period?",
+      "answer": "Demo policy: The default probation period is three months, with check-ins at weeks two, six, and twelve. Your written offer and HR confirmation define the period for your demo role.",
+      "keywords": "probation period length duration three months confirmation trial"
+    },
+    {
+      "id": "onboarding-06",
+      "category": "Onboarding",
+      "question": "What does an onboarding buddy do?",
+      "answer": "Demo policy: Your buddy helps with team introductions, everyday tools, and workplace questions during your first month. Employment decisions, policy exceptions, and confidential matters belong with your manager or HR.",
+      "keywords": "onboarding buddy role help support mentor introduction first month"
+    },
+    {
+      "id": "onboarding-07",
+      "category": "Onboarding",
+      "question": "Which training must new employees complete?",
+      "answer": "Demo policy: Complete information security, respectful workplace, data privacy, and role-specific orientation within your first ten working days. Your manager tracks completion and helps arrange accessible training.",
+      "keywords": "new employee mandatory required training induction security orientation completion"
+    },
+    {
+      "id": "onboarding-08",
+      "category": "Onboarding",
+      "question": "How do I set goals during onboarding?",
+      "answer": "Demo policy: Agree on a simple 30-, 60-, and 90-day plan with your manager in the first week. Include role outcomes, learning goals, and the support you need, then review progress at check-ins.",
+      "keywords": "onboarding initial goals 30 60 90 day plan first week expectations"
+    },
+    {
+      "id": "onboarding-09",
+      "category": "Onboarding",
+      "question": "What if my joining date needs to change?",
+      "answer": "Demo policy: Inform your recruiter and HR as soon as possible with the proposed new date. Treat the original joining date as active until HR sends written confirmation of the change.",
+      "keywords": "joining start date change postpone delay reschedule first day"
+    },
+    {
+      "id": "onboarding-10",
+      "category": "Onboarding",
+      "question": "How is probation completion confirmed?",
+      "answer": "Demo policy: Your manager reviews agreed goals and training completion with you, then sends a recommendation to HR. HR issues the written confirmation or next-step plan; completion is not assumed from the calendar alone.",
+      "keywords": "probation completion confirmation review passed successful letter"
+    },
+    {
+      "id": "onboarding-11",
+      "category": "Onboarding",
+      "question": "Where can I find the employee handbook?",
+      "answer": "Demo policy: Ask HR for the current employee handbook or use your organization's approved document hub. The sample FAQs summarize invented policies and do not replace an approved handbook.",
+      "keywords": "employee handbook policy manual guide document find latest"
+    },
+    {
+      "id": "onboarding-12",
+      "category": "Onboarding",
+      "question": "How do remote new joiners attend orientation?",
+      "answer": "Demo policy: HR sends video meeting links and an orientation checklist before your start date. Check your connection in advance, attend from a private space, and tell HR if you need an alternative format.",
+      "keywords": "remote new joiner onboarding virtual orientation induction video meeting"
+    },
+    {
+      "id": "offboarding-01",
+      "category": "Offboarding",
+      "question": "How do I submit a resignation?",
+      "answer": "Demo policy: Send a written resignation to your manager and HR stating your intended last working day. HR confirms receipt, the applicable notice arrangement, and your offboarding checklist.",
+      "keywords": "resign resignation resigning quit leave company submit notice process"
+    },
+    {
+      "id": "offboarding-02",
+      "category": "Offboarding",
+      "question": "What is the demo notice period?",
+      "answer": "Demo policy: The default notice period is 30 calendar days, subject to the written arrangement for the role. HR must confirm your actual last working day and any mutually agreed change.",
+      "keywords": "notice period length duration thirty 30 days resignation"
+    },
+    {
+      "id": "offboarding-03",
+      "category": "Offboarding",
+      "question": "What should a handover document include?",
+      "answer": "Demo policy: Include current work, deadlines, key contacts, file locations, open risks, and the next owner for each item. Store the handover in an approved shared location and review it with your manager.",
+      "keywords": "handover document knowledge transfer transition checklist projects responsibilities"
+    },
+    {
+      "id": "offboarding-04",
+      "category": "Offboarding",
+      "question": "How do I return company equipment when leaving?",
+      "answer": "Demo policy: Coordinate laptop, charger, badge, and other assigned asset returns with IT before your last working day. Request an asset receipt; remote employees should use the IT-approved return shipment process.",
+      "keywords": "return company equipment leaving laptop charger badge assets courier offboarding"
+    },
+    {
+      "id": "offboarding-05",
+      "category": "Offboarding",
+      "question": "What is an exit interview?",
+      "answer": "Demo policy: HR offers an exit conversation to collect feedback about your employee experience. Share constructive observations; HR explains how the feedback will be handled and who can access it.",
+      "keywords": "exit interview meeting conversation feedback departure offboarding"
+    },
+    {
+      "id": "offboarding-06",
+      "category": "Offboarding",
+      "question": "When is final settlement processed?",
+      "answer": "Demo policy: Finance aims to process the demo final settlement within 30 calendar days after the last working day and completed clearance. HR confirms outstanding items and the planned payment date.",
+      "keywords": "final settlement full final payment leaving clearance processing timeline"
+    },
+    {
+      "id": "offboarding-07",
+      "category": "Offboarding",
+      "question": "How do I request an experience or relieving letter?",
+      "answer": "Demo policy: Ask HR after your last working day and completed offboarding clearance. HR aims to issue the approved experience or relieving letter within five working days after verification.",
+      "keywords": "experience relieving service letter employment proof departure request"
+    },
+    {
+      "id": "offboarding-08",
+      "category": "Offboarding",
+      "question": "Can my last working day be changed?",
+      "answer": "Demo policy: Discuss the proposed date with your manager and HR, including coverage and handover impact. A revised last working day takes effect only after written HR confirmation.",
+      "keywords": "last working day change early release extend departure date"
+    },
+    {
+      "id": "offboarding-09",
+      "category": "Offboarding",
+      "question": "When will my system access end after leaving?",
+      "answer": "Demo policy: IT disables access at the end of the confirmed last working day or an earlier time authorized by HR. Transfer work through approved channels before access ends; do not copy company data to personal accounts.",
+      "keywords": "leaving system access end disable account deactivate termination offboarding"
+    },
+    {
+      "id": "offboarding-10",
+      "category": "Offboarding",
+      "question": "Can I keep company files after my employment ends?",
+      "answer": "Demo policy: Do not retain confidential company files, customer information, or internal credentials after leaving. Ask HR how to receive your own approved employment documents before access is removed.",
+      "keywords": "keep retain company files data after leaving personal copy confidential"
+    },
+    {
+      "id": "offboarding-11",
+      "category": "Offboarding",
+      "question": "How can former employees contact HR?",
+      "answer": "Demo policy: Use the former-employee contact channel provided in your offboarding confirmation. Verify your identity through HR's secure process before requesting personal employment records.",
+      "keywords": "former employee alumni contact HR after exit support records"
+    },
+    {
+      "id": "offboarding-12",
+      "category": "Offboarding",
+      "question": "What does offboarding clearance mean?",
+      "answer": "Demo policy: Clearance confirms handover completion, asset returns, expense closure, and any other assigned exit tasks. Your manager, IT, finance, and HR verify their own checklist items.",
+      "keywords": "offboarding exit clearance checklist meaning departments no dues"
+    },
+    {
+      "id": "benefits-01",
+      "category": "Benefits",
+      "question": "What benefits are included in the demo company plan?",
+      "answer": "Demo policy: The sample plan includes a learning allowance, wellness reimbursement, and optional group health coverage. Eligibility, enrollment choices, and any employee contribution must be confirmed by HR.",
+      "keywords": "benefits overview included plan perks health wellness learning package"
+    },
+    {
+      "id": "benefits-02",
+      "category": "Benefits",
+      "question": "How do I enroll in health coverage?",
+      "answer": "Demo policy: Request enrollment instructions from HR within 15 calendar days of joining. Submit enrollment information through the secure provider process; HR confirms the effective date and available options.",
+      "keywords": "health insurance coverage enroll enrollment medical plan joining deadline"
+    },
+    {
+      "id": "benefits-03",
+      "category": "Benefits",
+      "question": "Can I add dependents to health coverage?",
+      "answer": "Demo policy: Ask HR which dependent categories the sample plan permits and what documents are required. Coverage starts only after the provider confirms enrollment and any applicable contribution.",
+      "keywords": "dependent spouse child children parents add health coverage insurance family"
+    },
+    {
+      "id": "benefits-04",
+      "category": "Benefits",
+      "question": "How much is the annual learning allowance?",
+      "answer": "Demo policy: Eligible employees may request up to INR 12,000 per calendar year for approved job-related learning. Obtain manager approval before purchase and submit proof of payment and completion.",
+      "keywords": "learning allowance budget annual training course education twelve thousand 12000",
+      "aliases": [
+        "What training budget can I use for courses this year?"
+      ]
+    },
+    {
+      "id": "benefits-05",
+      "category": "Benefits",
+      "question": "How do I claim the wellness reimbursement?",
+      "answer": "Demo policy: Eligible employees may claim up to INR 3,000 per quarter for approved wellness activities. Confirm eligibility with HR first, then submit an itemized receipt through the expense process.",
+      "keywords": "wellness reimbursement claim fitness gym wellbeing quarterly 3000"
+    },
+    {
+      "id": "benefits-06",
+      "category": "Benefits",
+      "question": "Where can I ask about parental leave support?",
+      "answer": "Demo policy: Contact HR confidentially to discuss your needs, timing, and available parental support. This sample FAQ does not define statutory entitlements; HR must provide the applicable real policy before use.",
+      "keywords": "parental maternity paternity adoption baby newborn leave support"
+    },
+    {
+      "id": "benefits-07",
+      "category": "Benefits",
+      "question": "How do I request a workplace accommodation?",
+      "answer": "Demo policy: Contact HR confidentially and describe the work-related support or adjustment you need. HR coordinates an interactive review with appropriate parties and limits sensitive information to those who need it.",
+      "keywords": "workplace accommodation accessibility disability adjustment support assistive"
+    },
+    {
+      "id": "benefits-08",
+      "category": "Benefits",
+      "question": "Is confidential wellbeing support available?",
+      "answer": "Demo policy: Ask HR for the confidential wellbeing support options configured for your organization. This demo does not operate a counselling or emergency service.",
+      "keywords": "wellbeing mental health counselling counseling confidential support employee assistance"
+    },
+    {
+      "id": "benefits-09",
+      "category": "Benefits",
+      "question": "When can I change benefit enrollment choices?",
+      "answer": "Demo policy: Changes can be requested during the announced enrollment window or after a provider-recognized life event. Contact HR promptly so it can confirm deadlines and required evidence.",
+      "keywords": "change benefit enrollment choice window life event marriage birth update"
+    },
+    {
+      "id": "benefits-10",
+      "category": "Benefits",
+      "question": "Does unused learning allowance carry forward?",
+      "answer": "Demo policy: Unused learning allowance expires at the end of the calendar year and does not carry forward. A course approved before year-end must meet finance's published claim deadline.",
+      "keywords": "unused learning allowance carry forward rollover expire budget year"
+    },
+    {
+      "id": "benefits-11",
+      "category": "Benefits",
+      "question": "Can contractors use employee benefits?",
+      "answer": "Demo policy: Contractor benefits are defined by the individual service agreement, not the employee sample plan. HR or the contract owner can confirm what applies before any purchase or enrollment.",
+      "keywords": "contractor consultant temporary benefit eligibility contractors plan"
+    },
+    {
+      "id": "benefits-12",
+      "category": "Benefits",
+      "question": "How do I check whether a benefit claim was approved?",
+      "answer": "Demo policy: Review the claim status in your approved expense or benefits channel, or contact HR with the claim reference. The FAQ assistant cannot read individual claims or confirm payment.",
+      "keywords": "benefit claim approved status track reimbursement reference pending"
+    },
+    {
+      "id": "conduct-01",
+      "category": "Workplace conduct",
+      "question": "How do I report harassment or bullying?",
+      "answer": "Demo policy: Contact HR or the designated reporting channel and describe the concern using facts you feel safe sharing. If your manager is involved, go directly to HR; reports should be handled confidentially and without retaliation.",
+      "keywords": "report harassment bullying abuse intimidation inappropriate behavior conduct complaint"
+    },
+    {
+      "id": "conduct-02",
+      "category": "Workplace conduct",
+      "question": "What is the policy on retaliation after a report?",
+      "answer": "Demo policy: Retaliation for raising a good-faith concern or participating in a review is prohibited. Report suspected retaliation directly to HR through the confidential reporting channel.",
+      "keywords": "retaliation reprisal whistleblower report protection good faith punishment"
+    },
+    {
+      "id": "conduct-03",
+      "category": "Workplace conduct",
+      "question": "How should I disclose a conflict of interest?",
+      "answer": "Demo policy: Tell HR and your manager about personal, financial, or outside-work interests that could affect your decisions. Disclose the situation before participating in the related decision or transaction.",
+      "keywords": "conflict interest disclose outside business family vendor financial personal"
+    },
+    {
+      "id": "conduct-04",
+      "category": "Workplace conduct",
+      "question": "May I accept a gift from a supplier?",
+      "answer": "Demo policy: Decline cash or cash-equivalent gifts. Ask your manager and HR before accepting any other supplier gift worth more than INR 1,000 or anything connected to a pending business decision.",
+      "keywords": "gift gifts supplier vendor cash hospitality accept 1000"
+    },
+    {
+      "id": "conduct-05",
+      "category": "Workplace conduct",
+      "question": "What is the dress code?",
+      "answer": "Demo policy: Wear clean, comfortable clothing suitable for your work and any safety requirements. Client meetings may need a more formal dress standard, which your manager should communicate in advance.",
+      "keywords": "dress code clothing clothes attire wear office formal casual"
+    },
+    {
+      "id": "conduct-06",
+      "category": "Workplace conduct",
+      "question": "Can I post about company work on social media?",
+      "answer": "Demo policy: Share only information approved for public release and never post confidential company or customer details. Obtain consent before sharing identifiable colleague photos and ask communications about official statements.",
+      "keywords": "social media linkedin post public confidential company photos online"
+    },
+    {
+      "id": "conduct-07",
+      "category": "Workplace conduct",
+      "question": "How do I raise a workplace grievance?",
+      "answer": "Demo policy: Raise the issue with your manager when appropriate, or contact HR directly if that is safer or more suitable. Include the facts, dates, and desired resolution; HR will explain the review process.",
+      "keywords": "grievance complaint workplace concern dispute raise escalation resolution"
+    },
+    {
+      "id": "conduct-08",
+      "category": "Workplace conduct",
+      "question": "Can I take an outside job or freelance project?",
+      "answer": "Demo policy: Disclose outside work to HR before accepting it if it may affect availability, create a conflict, or use company resources. Do not share company information or use company equipment for outside work without approval.",
+      "keywords": "outside job second job freelance moonlighting side project employment"
+    },
+    {
+      "id": "conduct-09",
+      "category": "Workplace conduct",
+      "question": "How should confidential information be shared?",
+      "answer": "Demo policy: Share confidential information only with authorized people through approved company tools. Verify recipients and access permissions, and send the minimum information required for the task.",
+      "keywords": "share confidential information sensitive data authorized secure recipients"
+    },
+    {
+      "id": "conduct-10",
+      "category": "Workplace conduct",
+      "question": "What should I do if I see a safety hazard?",
+      "answer": "Demo policy: Move away from immediate danger, alert the workplace safety contact, and inform your manager. Follow the site's emergency instructions; the FAQ chat is not an emergency response channel.",
+      "keywords": "safety hazard unsafe danger incident report workplace risk"
+    },
+    {
+      "id": "conduct-11",
+      "category": "Workplace conduct",
+      "question": "What behavior is expected in team meetings?",
+      "answer": "Demo policy: Be respectful, avoid personal attacks, give others room to contribute, and follow agreed meeting norms. Ask before recording and use accessible materials where practical.",
+      "keywords": "meeting behavior etiquette respect team communication recording inclusive"
+    },
+    {
+      "id": "conduct-12",
+      "category": "Workplace conduct",
+      "question": "Can the chatbot approve a policy exception?",
+      "answer": "Demo policy: No. Only the authorized manager, HR, or other designated policy owner can approve an exception in writing. The FAQ assistant cannot approve requests, change records, or override policies.",
+      "keywords": "chatbot approve policy exception override authority authorization bot decisions"
+    },
+    {
+      "id": "it-01",
+      "category": "IT and security",
+      "question": "How do I reset a forgotten password?",
+      "answer": "Demo policy: Use the approved account recovery process or contact IT through the verified support channel. Never share a password or one-time code with the FAQ assistant or another person.",
+      "keywords": "reset forgotten forgot password locked account recovery login credentials"
+    },
+    {
+      "id": "it-02",
+      "category": "IT and security",
+      "question": "How do I report a suspicious email?",
+      "answer": "Demo policy: Do not open its attachments, follow its links, or reply. Use the approved phishing-report tool or forward it to IT as instructed, then report any interaction you already had with it.",
+      "keywords": "suspicious email phishing scam malicious attachment link report"
+    },
+    {
+      "id": "it-03",
+      "category": "IT and security",
+      "question": "What should I do if my laptop is lost or stolen?",
+      "answer": "Demo policy: Notify IT and your manager immediately using a verified contact channel, with the device identifier and last known location. IT coordinates access protection and replacement; do not attempt to track down a thief yourself.",
+      "keywords": "laptop lost stolen missing device theft security report immediately"
+    },
+    {
+      "id": "it-04",
+      "category": "IT and security",
+      "question": "May I install software on my work laptop?",
+      "answer": "Demo policy: Request software through IT and include its business purpose. Install only approved, licensed software after IT confirmation; do not disable security controls to complete an installation.",
+      "keywords": "install software application laptop permission approved licensed program"
+    },
+    {
+      "id": "it-05",
+      "category": "IT and security",
+      "question": "How do I request access to an application?",
+      "answer": "Demo policy: Ask your manager to approve the business need, then send the request to IT with the application name and required access level. Request the least access needed and never borrow a colleague's account.",
+      "keywords": "request application tool system access permission role authorization provisioning"
+    },
+    {
+      "id": "it-06",
+      "category": "IT and security",
+      "question": "What should I do if my work laptop stops working?",
+      "answer": "Demo policy: Record the visible error, contact IT, and tell your manager about the work impact. Avoid unapproved repairs or factory resets; IT will advise on troubleshooting or a replacement device.",
+      "keywords": "laptop broken not working fails crashes device repair hardware support"
+    },
+    {
+      "id": "it-07",
+      "category": "IT and security",
+      "question": "Is multi-factor authentication required?",
+      "answer": "Demo policy: Enable multi-factor authentication on company accounts wherever it is offered. Keep recovery methods secure and report unexpected approval prompts or a lost authentication device to IT.",
+      "keywords": "multi factor authentication mfa 2fa two factor authenticator required security"
+    },
+    {
+      "id": "it-08",
+      "category": "IT and security",
+      "question": "Can I use personal cloud storage for company files?",
+      "answer": "Demo policy: Store company files only in approved company-managed services. Personal email, drives, and file-sharing accounts must not be used for company data unless IT and the data owner explicitly authorize an exception.",
+      "keywords": "personal cloud storage drive dropbox files email backup company"
+    },
+    {
+      "id": "it-09",
+      "category": "IT and security",
+      "question": "How do I connect to the company network remotely?",
+      "answer": "Demo policy: Use the IT-approved remote access or VPN process with your assigned account and multi-factor authentication. Ask IT for the current setup instructions and report connection errors through the support channel.",
+      "keywords": "vpn remote network connect connection secure access setup"
+    },
+    {
+      "id": "it-10",
+      "category": "IT and security",
+      "question": "What should I do if I accidentally share sensitive data?",
+      "answer": "Demo policy: Notify IT or the security contact immediately with the recipient, time, and type of information involved. Avoid deleting evidence or contacting external parties until the incident owner advises you.",
+      "keywords": "accidentally shared sensitive data leak breach wrong recipient incident exposure"
+    },
+    {
+      "id": "it-11",
+      "category": "IT and security",
+      "question": "Can I enter company data into public AI tools?",
+      "answer": "Demo policy: Do not enter confidential company, customer, or personal employee data into unapproved public AI tools. Ask IT and the data owner which tools and data types are permitted before use.",
+      "keywords": "public AI tools chatbot confidential company data upload chatgpt permission"
+    },
+    {
+      "id": "it-12",
+      "category": "IT and security",
+      "question": "How should I lock and secure my work device?",
+      "answer": "Demo policy: Lock the screen whenever you leave your device unattended and keep it physically secure. Install IT-approved security updates promptly and never share your sign-in session.",
+      "keywords": "lock screen secure device unattended updates desk laptop security"
+    },
+    {
+      "id": "remote-01",
+      "category": "Remote work",
+      "question": "How do I request a work-from-home day?",
+      "answer": "Demo policy: Ask your manager before the planned remote day and explain your availability and any coverage needs. Remote work starts only after approval and should be reflected in your team's schedule.",
+      "keywords": "request work from home wfh remote day approval home working"
+    },
+    {
+      "id": "remote-02",
+      "category": "Remote work",
+      "question": "How many hybrid office days are expected?",
+      "answer": "Demo policy: The sample hybrid arrangement expects two agreed office days each week. Team requirements and individual arrangements can differ; your manager confirms the schedule.",
+      "keywords": "hybrid office days weekly two attendance onsite frequency expected",
+      "aliases": [
+        "How often do hybrid employees attend the office?"
+      ]
+    },
+    {
+      "id": "remote-03",
+      "category": "Remote work",
+      "question": "What are the core collaboration hours for remote teams?",
+      "answer": "Demo policy: The default core collaboration window is 11:00 AM to 4:00 PM in the team's agreed time zone. Discuss exceptions in advance and keep shared availability current.",
+      "keywords": "remote core collaboration hours availability timezone overlap eleven four"
+    },
+    {
+      "id": "remote-04",
+      "category": "Remote work",
+      "question": "Can I work remotely from another country?",
+      "answer": "Demo policy: Get written HR and manager approval before working from another country, even for a short visit. HR must review the location and dates; this FAQ cannot determine immigration, tax, or legal eligibility.",
+      "keywords": "remote another country abroad overseas international location travel work"
+    },
+    {
+      "id": "remote-05",
+      "category": "Remote work",
+      "question": "What should I do if my home internet fails?",
+      "answer": "Demo policy: Notify your manager through an available channel and explain the expected outage. Agree on an approved backup connection, alternate work location, or schedule adjustment without exposing company data.",
+      "keywords": "home internet fails outage wifi connection power remote disconnected"
+    },
+    {
+      "id": "remote-06",
+      "category": "Remote work",
+      "question": "Is home internet reimbursed?",
+      "answer": "Demo policy: Employees with an approved ongoing remote arrangement may claim up to INR 800 per month for internet. Submit the monthly bill through the expense process after manager approval.",
+      "keywords": "home internet reimbursement broadband wifi bill allowance 800 monthly"
+    },
+    {
+      "id": "remote-07",
+      "category": "Remote work",
+      "question": "Can I borrow equipment for my home workspace?",
+      "answer": "Demo policy: Request monitors, keyboards, or other work equipment through your manager and IT. IT records assigned assets and return conditions; personal purchases need approval before reimbursement is considered.",
+      "keywords": "borrow home office equipment workspace monitor keyboard ergonomic remote"
+    },
+    {
+      "id": "remote-08",
+      "category": "Remote work",
+      "question": "How should I communicate when working remotely?",
+      "answer": "Demo policy: Keep your availability visible, respond within your team's agreed working-time expectations, and document decisions in the approved shared channel. Set a clear status when focused, away, or offline.",
+      "keywords": "remote communicate communication status availability response asynchronous update"
+    },
+    {
+      "id": "remote-09",
+      "category": "Remote work",
+      "question": "Can I work from a cafe or public space?",
+      "answer": "Demo policy: Use only locations where you can protect screens, conversations, and equipment. Avoid sensitive calls in public and use IT-approved secure connectivity; ask your manager if the location fits your role.",
+      "keywords": "cafe public space coworking remote location coffee shop privacy"
+    },
+    {
+      "id": "remote-10",
+      "category": "Remote work",
+      "question": "Do remote employees still record attendance?",
+      "answer": "Demo policy: Yes. Record your actual start and end times using the same attendance process as office employees. Remote-work approval does not replace attendance or leave recording.",
+      "keywords": "remote employees attendance checkin check out record home working hours"
+    },
+    {
+      "id": "remote-11",
+      "category": "Remote work",
+      "question": "How do I change my regular hybrid schedule?",
+      "answer": "Demo policy: Discuss the proposed pattern and team impact with your manager at least one week ahead. HR records an ongoing arrangement after approval; one-off remote days use the normal request process.",
+      "keywords": "change regular hybrid schedule pattern office remote weekly arrangement"
+    },
+    {
+      "id": "remote-12",
+      "category": "Remote work",
+      "question": "Can remote work replace sick leave?",
+      "answer": "Demo policy: If you are not well enough to work, take sick leave and notify your manager. Working from home is an approved work arrangement, not a substitute for rest when you are unwell.",
+      "keywords": "remote work sick leave replace sickness unwell home illness rest"
+    },
+    {
+      "id": "performance-01",
+      "category": "Performance",
+      "question": "How often are performance reviews held?",
+      "answer": "Demo policy: Formal performance reviews take place twice a year, in June and December. Managers also hold regular check-ins so feedback and support are available throughout the year.",
+      "keywords": "performance review cycle frequency twice yearly june december appraisal"
+    },
+    {
+      "id": "performance-02",
+      "category": "Performance",
+      "question": "How do I set measurable performance goals?",
+      "answer": "Demo policy: Agree on specific outcomes, a success measure, and a due date with your manager. Keep goals relevant to your role and record dependencies or support needed to achieve them.",
+      "keywords": "performance goals measurable set objectives outcomes smart success measures"
+    },
+    {
+      "id": "performance-03",
+      "category": "Performance",
+      "question": "What should I include in a self-review?",
+      "answer": "Demo policy: Describe results against your goals, supporting examples, lessons learned, and areas where you need support. Include collaboration and development progress, and avoid sharing confidential information unnecessarily.",
+      "keywords": "self review assessment appraisal write achievements evidence reflection"
+    },
+    {
+      "id": "performance-04",
+      "category": "Performance",
+      "question": "How often should I have a one-to-one with my manager?",
+      "answer": "Demo policy: Schedule a one-to-one at least every two weeks. Use the conversation for priorities, feedback, blockers, workload, and development, and agree on clear follow-up actions.",
+      "keywords": "one to one 1 1 manager meeting checkin fortnight biweekly frequency"
+    },
+    {
+      "id": "performance-05",
+      "category": "Performance",
+      "question": "Can I update my goals during a review cycle?",
+      "answer": "Demo policy: Yes, when priorities or circumstances change, discuss a revision with your manager. Record the revised outcome, measure, and date so the final review uses agreed expectations.",
+      "keywords": "update change revise goals during cycle priorities review objectives"
+    },
+    {
+      "id": "performance-06",
+      "category": "Performance",
+      "question": "What if I disagree with my performance review?",
+      "answer": "Demo policy: Discuss the specific rating or feedback with your manager and bring relevant examples. If the concern remains unresolved, ask HR for a review of the process and documented evidence.",
+      "keywords": "disagree performance review rating dispute appeal unfair appraisal"
+    },
+    {
+      "id": "performance-07",
+      "category": "Performance",
+      "question": "How do I request feedback from colleagues?",
+      "answer": "Demo policy: Ask for focused feedback on a shared project or behavior and explain how it will help your development. Use approved feedback tools and respect the visibility rules of the review process.",
+      "keywords": "peer colleague feedback request 360 collaboration development"
+    },
+    {
+      "id": "performance-08",
+      "category": "Performance",
+      "question": "What is a development plan?",
+      "answer": "Demo policy: A development plan lists skills to build, learning activities, opportunities to practice, and review dates. Create it with your manager and update it as your goals and role evolve.",
+      "keywords": "development plan growth skills career learning improvement"
+    },
+    {
+      "id": "performance-09",
+      "category": "Performance",
+      "question": "How are promotion decisions made?",
+      "answer": "Demo policy: Promotions consider sustained performance, demonstrated readiness for the next role, available responsibilities, and the approved review process. Your manager and HR can explain role criteria; no promotion is automatic.",
+      "keywords": "promotion criteria decision eligibility career advancement next level"
+    },
+    {
+      "id": "performance-10",
+      "category": "Performance",
+      "question": "Does a positive review guarantee a salary increase?",
+      "answer": "Demo policy: No. Pay reviews also consider role scope, internal consistency, and the approved compensation budget. HR communicates any confirmed change in writing.",
+      "keywords": "positive performance review salary increase raise hike guarantee compensation"
+    },
+    {
+      "id": "performance-11",
+      "category": "Performance",
+      "question": "What happens in a performance improvement plan?",
+      "answer": "Demo policy: The manager and HR document the specific expectations, support, check-in dates, and review period. The employee can ask questions and raise concerns with HR throughout the process.",
+      "keywords": "performance improvement plan pip support expectations underperformance"
+    },
+    {
+      "id": "performance-12",
+      "category": "Performance",
+      "question": "Who can read performance feedback?",
+      "answer": "Demo policy: Performance feedback is restricted to the employee and authorized reviewers according to the review process. Do not share another person's feedback or ratings outside approved channels.",
+      "keywords": "performance feedback review visibility privacy access confidential ratings"
+    },
+    {
+      "id": "recruiting-01",
+      "category": "Recruiting",
+      "question": "How do I refer a candidate for an open role?",
+      "answer": "Demo policy: Share the role reference and the candidate's consented resume through the approved referral channel. Ask the candidate before sharing their information; the recruiting team manages selection and updates.",
+      "keywords": "refer candidate employee referral open role resume hiring friend"
+    },
+    {
+      "id": "recruiting-02",
+      "category": "Recruiting",
+      "question": "Is there a demo employee referral reward?",
+      "answer": "Demo policy: An eligible referral may receive INR 10,000 after the referred hire completes three months, subject to the published role terms. HR confirms eligibility; self-referrals and hiring decision-makers are excluded.",
+      "keywords": "referral reward bonus payment incentive 10000 eligibility"
+    },
+    {
+      "id": "recruiting-03",
+      "category": "Recruiting",
+      "question": "Where are internal job openings posted?",
+      "answer": "Demo policy: Ask HR for the current internal opportunities board or hiring notice. Discuss internal applications with the recruiter so eligibility, confidentiality, and the transition process are clear.",
+      "keywords": "internal job openings vacancies posted opportunities mobility roles board"
+    },
+    {
+      "id": "recruiting-04",
+      "category": "Recruiting",
+      "question": "How do I request approval to hire a new employee?",
+      "answer": "Demo policy: Submit the role purpose, responsibilities, proposed level, budget, and expected start date to your manager and HR. Recruiting begins after the headcount and compensation range are approved.",
+      "keywords": "hire new employee headcount requisition approval vacancy budget recruitment"
+    },
+    {
+      "id": "recruiting-05",
+      "category": "Recruiting",
+      "question": "How should interview feedback be recorded?",
+      "answer": "Demo policy: Record job-relevant evidence against the agreed role criteria within one working day of the interview. Avoid personal assumptions and keep feedback in the approved recruiting system.",
+      "keywords": "interview feedback record scorecard evaluation candidate evidence deadline"
+    },
+    {
+      "id": "recruiting-06",
+      "category": "Recruiting",
+      "question": "Can interviewers ask about personal family plans?",
+      "answer": "Demo policy: Keep interview questions relevant to the role, skills, and job requirements. Do not ask about family plans or other unrelated sensitive personal matters; HR reviews the interview guide.",
+      "keywords": "interview questions family plans personal sensitive inappropriate discrimination"
+    },
+    {
+      "id": "recruiting-07",
+      "category": "Recruiting",
+      "question": "Who is allowed to make a job offer?",
+      "answer": "Demo policy: Only the recruiting team or HR may issue an approved written offer. Interviewers and managers should not promise compensation, benefits, or start dates before the offer is approved.",
+      "keywords": "job offer issue authority written recruiter compensation promise approved"
+    },
+    {
+      "id": "recruiting-08",
+      "category": "Recruiting",
+      "question": "How do I reschedule a candidate interview?",
+      "answer": "Demo policy: Tell the recruiting coordinator promptly and provide alternative time slots. The coordinator confirms the new time with the candidate and updates the meeting details.",
+      "keywords": "reschedule candidate interview change cancel slot availability time"
+    },
+    {
+      "id": "recruiting-09",
+      "category": "Recruiting",
+      "question": "How should candidate information be stored?",
+      "answer": "Demo policy: Store candidate information only in the approved recruiting system with access limited to the hiring team. Do not forward resumes to personal accounts or retain copies after the approved retention period.",
+      "keywords": "candidate information data resume privacy storage retention recruiting"
+    },
+    {
+      "id": "recruiting-10",
+      "category": "Recruiting",
+      "question": "Can a candidate request an interview accommodation?",
+      "answer": "Demo policy: Yes. Direct the request to the recruiter, who coordinates an accessible interview arrangement with the candidate. Share only the information needed to arrange the adjustment.",
+      "keywords": "candidate interview accommodation accessibility adjustment support recruitment"
+    },
+    {
+      "id": "recruiting-11",
+      "category": "Recruiting",
+      "question": "How are candidate status updates handled?",
+      "answer": "Demo policy: The assigned recruiter communicates interview steps, delays, and final decisions. Employees should direct status questions to the recruiter and avoid making promises on the hiring team's behalf.",
+      "keywords": "candidate application status update progress decision communication recruiter"
+    },
+    {
+      "id": "recruiting-12",
+      "category": "Recruiting",
+      "question": "Can I interview a relative or close friend?",
+      "answer": "Demo policy: Disclose the relationship to the recruiter before participating. HR assigns an independent interviewer or other safeguards so the selection process remains fair and documented.",
+      "keywords": "interview relative close friend family hiring conflict relationship disclose"
+    },
+    {
+      "id": "expense-01",
+      "category": "Expenses and travel",
+      "question": "How do I submit a business expense claim?",
+      "answer": "Demo policy: Submit the business purpose, date, amount, category, and itemized receipt through the approved expense channel. Obtain manager approval and keep the original receipt until finance confirms the claim is closed.",
+      "keywords": "submit business expense claim reimbursement process receipt manager"
+    },
+    {
+      "id": "expense-02",
+      "category": "Expenses and travel",
+      "question": "What is the deadline for submitting expense claims?",
+      "answer": "Demo policy: Submit expenses within 30 calendar days of the transaction or return from approved business travel. Ask finance about late claims before submission; reimbursement is not automatic.",
+      "keywords": "expense claim deadline submit thirty 30 calendar days late",
+      "aliases": [
+        "How soon do I need to file a reimbursement claim?"
+      ]
+    },
+    {
+      "id": "expense-03",
+      "category": "Expenses and travel",
+      "question": "What if I lose an expense receipt?",
+      "answer": "Demo policy: Ask the vendor for a duplicate receipt first. If it cannot be recovered, send finance the transaction evidence and explanation; finance decides whether an exception is acceptable.",
+      "keywords": "lost missing expense receipt duplicate no bill reimbursement evidence"
+    },
+    {
+      "id": "expense-04",
+      "category": "Expenses and travel",
+      "question": "Do I need approval before booking business travel?",
+      "answer": "Demo policy: Get written manager approval for the trip purpose, dates, and estimated cost before booking. Use the approved travel channel and confirm any finance approval required for the budget.",
+      "keywords": "business travel booking approval trip preapprove flight hotel request"
+    },
+    {
+      "id": "expense-05",
+      "category": "Expenses and travel",
+      "question": "Which flight class can I book for business travel?",
+      "answer": "Demo policy: Economy class is the standard for demo business travel. A different class needs written approval from the budget owner before booking.",
+      "keywords": "flight class economy business premium airfare booking cabin"
+    },
+    {
+      "id": "expense-06",
+      "category": "Expenses and travel",
+      "question": "What is the demo hotel reimbursement limit?",
+      "answer": "Demo policy: The sample domestic hotel limit is INR 4,000 per night before taxes. Get finance approval before booking above the limit or arranging international accommodation.",
+      "keywords": "hotel accommodation room limit cap reimbursement night 4000 domestic"
+    },
+    {
+      "id": "expense-07",
+      "category": "Expenses and travel",
+      "question": "What is the demo meal allowance during travel?",
+      "answer": "Demo policy: Approved domestic business travel meals can be reimbursed up to INR 1,000 per day with itemized receipts. Do not claim a meal already included in the hotel, event, or another paid service.",
+      "keywords": "meal food allowance travel per diem daily limit 1000 receipts"
+    },
+    {
+      "id": "expense-08",
+      "category": "Expenses and travel",
+      "question": "Can I claim my regular commute to the office?",
+      "answer": "Demo policy: The normal journey between home and your assigned office is a personal expense. A specific company transport arrangement or approved exceptional trip must be confirmed by HR or finance.",
+      "keywords": "regular commute office home transport bus taxi reimbursement commuting"
+    },
+    {
+      "id": "expense-09",
+      "category": "Expenses and travel",
+      "question": "How do I cancel an approved business trip?",
+      "answer": "Demo policy: Tell your manager and the travel coordinator promptly so bookings can be cancelled or credited. Record any unavoidable cancellation fee with the business reason and supporting evidence.",
+      "keywords": "cancel approved business trip travel cancellation refund booking fee"
+    },
+    {
+      "id": "expense-10",
+      "category": "Expenses and travel",
+      "question": "When are approved expense claims reimbursed?",
+      "answer": "Demo policy: Finance aims to reimburse complete, approved claims within ten working days. Missing documents or approval questions may delay payment, so track the claim through the approved expense channel.",
+      "keywords": "approved expense reimbursement payment timeline when paid ten working days"
+    },
+    {
+      "id": "expense-11",
+      "category": "Expenses and travel",
+      "question": "How do I claim an expense in a foreign currency?",
+      "answer": "Demo policy: Attach the original receipt, currency amount, and payment statement or approved exchange-rate evidence. Finance applies the demo conversion process and confirms the reimbursable amount.",
+      "keywords": "foreign currency expense exchange conversion international receipt rate"
+    },
+    {
+      "id": "expense-12",
+      "category": "Expenses and travel",
+      "question": "Can I combine personal travel with a business trip?",
+      "answer": "Demo policy: Obtain manager and finance approval before booking a mixed trip. Clearly separate personal dates and costs; the company reimburses only approved business expenses.",
+      "keywords": "personal travel business trip combine extend holiday mixed costs"
+    },
+    {
+      "id": "records-01",
+      "category": "Employee records",
+      "question": "How do I update my home address?",
+      "answer": "Demo policy: Use the secure employee-detail update process or contact HR to request an address change. HR verifies the update; do not share your full address in the FAQ chat.",
+      "keywords": "update change home residential address employee records personal details"
+    },
+    {
+      "id": "records-02",
+      "category": "Employee records",
+      "question": "How do I update my emergency contact?",
+      "answer": "Demo policy: Send updated emergency-contact details through the authorized employee record process and confirm the person's consent. Review these details when circumstances change and at least once a year.",
+      "keywords": "update change emergency contact next kin phone consent"
+    },
+    {
+      "id": "records-03",
+      "category": "Employee records",
+      "question": "Who can edit employee records?",
+      "answer": "Demo policy: Authorized HR administrators manage employment records, while employees use the approved request process for their own corrections. Access is based on role, and changes should have a clear business reason.",
+      "keywords": "edit employee records permission HR admin authorization profile access"
+    },
+    {
+      "id": "records-04",
+      "category": "Employee records",
+      "question": "How do I change my preferred name?",
+      "answer": "Demo policy: Ask HR to update your preferred display name in supported workplace tools. A legal-name change may require a separate secure verification step for payroll and employment documents.",
+      "keywords": "preferred name display change legal name identity profile"
+    },
+    {
+      "id": "records-05",
+      "category": "Employee records",
+      "question": "How do I correct my department or reporting manager?",
+      "answer": "Demo policy: Tell HR the incorrect field and the manager-approved department or reporting line. HR verifies the change with the responsible team before updating the employee directory.",
+      "keywords": "correct department reporting manager wrong team employee directory change"
+    },
+    {
+      "id": "records-06",
+      "category": "Employee records",
+      "question": "Where can I find a colleague's work contact details?",
+      "answer": "Demo policy: Use the employee directory for approved work contact information and team details. Personal phone numbers, home addresses, and private documents are not part of the public directory.",
+      "keywords": "find colleague work contact directory email phone team employee"
+    },
+    {
+      "id": "records-07",
+      "category": "Employee records",
+      "question": "Can I export the employee directory?",
+      "answer": "Demo policy: Directory exports require an authorized business purpose and the appropriate role permission. Keep exported data in approved company storage and do not upload it to personal services.",
+      "keywords": "export employee directory csv download people data permission"
+    },
+    {
+      "id": "records-08",
+      "category": "Employee records",
+      "question": "How do I request a copy of my employment records?",
+      "answer": "Demo policy: Contact HR through the secure employee-document request process and specify the records you need. HR verifies your identity and confirms the available documents and delivery method.",
+      "keywords": "request copy employment records personal file documents access"
+    },
+    {
+      "id": "records-09",
+      "category": "Employee records",
+      "question": "How long are employee records kept?",
+      "answer": "Demo policy: HR maintains records according to the organization's approved retention schedule and access rules. This fictional FAQ does not set a universal retention period; ask HR about a specific record type.",
+      "keywords": "employee records retention kept duration delete storage period"
+    },
+    {
+      "id": "records-10",
+      "category": "Employee records",
+      "question": "How do I report a duplicate employee profile?",
+      "answer": "Demo policy: Tell HR which work profiles appear duplicated and include the employee IDs if available. HR verifies the correct record and resolves the duplicate without deleting valid employment history.",
+      "keywords": "duplicate employee profile record merge two IDs people directory"
+    },
+    {
+      "id": "records-11",
+      "category": "Employee records",
+      "question": "Can the chatbot change my employee profile?",
+      "answer": "Demo policy: No. The FAQ assistant only retrieves reviewed answers and cannot edit employee data. Use the authorized employee form or ask HR to make a verified change.",
+      "keywords": "chatbot change edit employee profile record action update bot"
+    },
+    {
+      "id": "records-12",
+      "category": "Employee records",
+      "question": "How do I correct my joining date in the directory?",
+      "answer": "Demo policy: Send HR the incorrect joining date and the confirmed date from your approved joining documents. HR checks the source records before correcting the employee profile.",
+      "keywords": "correct joining start date directory employee profile wrong records"
+    },
+    {
+      "id": "workplace-01",
+      "category": "Workplace services",
+      "question": "How do I reserve a meeting room?",
+      "answer": "Demo policy: Use the approved room calendar, choose a suitable capacity, and add the meeting duration. Release the booking if plans change and leave the room ready for the next team.",
+      "keywords": "reserve book meeting room calendar conference space booking"
+    },
+    {
+      "id": "workplace-02",
+      "category": "Workplace services",
+      "question": "How do I register an office visitor?",
+      "answer": "Demo policy: Register the visitor with reception before arrival, including the host and visit time. Meet the visitor, follow the site's badge process, and keep restricted work areas protected.",
+      "keywords": "office visitor guest register reception host badge arrival"
+    },
+    {
+      "id": "workplace-03",
+      "category": "Workplace services",
+      "question": "What should I do if I lose my office badge?",
+      "answer": "Demo policy: Notify workplace services or security immediately so the badge can be deactivated. Bring approved identity verification for a replacement and do not borrow another employee's badge.",
+      "keywords": "lost office badge access card ID missing replacement security"
+    },
+    {
+      "id": "workplace-04",
+      "category": "Workplace services",
+      "question": "How do I report an office maintenance problem?",
+      "answer": "Demo policy: Send workplace services the location, issue, and any safe-to-capture supporting details. Keep away from damaged equipment or electrical hazards and alert the safety contact for urgent risks.",
+      "keywords": "office maintenance problem repair facility facilities broken desk light air conditioning"
+    },
+    {
+      "id": "workplace-05",
+      "category": "Workplace services",
+      "question": "Where can I find the company holiday calendar?",
+      "answer": "Demo policy: HR publishes the company holiday calendar in the approved workspace or employee notice channel. Check the calendar for your assigned work location because observed holidays may differ.",
+      "keywords": "company holiday calendar public holidays list dates festival location"
+    },
+    {
+      "id": "workplace-06",
+      "category": "Workplace services",
+      "question": "What should I do during an office evacuation?",
+      "answer": "Demo policy: Follow the posted evacuation route and the instructions of site emergency coordinators. Go to the assigned assembly point and do not re-enter until authorized; this chat cannot manage an emergency.",
+      "keywords": "evacuation fire alarm emergency assembly exit office drill"
+    },
+    {
+      "id": "workplace-07",
+      "category": "Workplace services",
+      "question": "Is office parking available?",
+      "answer": "Demo policy: Ask workplace services about the site's parking allocation and registration process. Use only approved spaces and keep accessible bays and emergency routes clear.",
+      "keywords": "office parking car bike vehicle space allocation register"
+    },
+    {
+      "id": "workplace-08",
+      "category": "Workplace services",
+      "question": "How do I request stationery or office supplies?",
+      "answer": "Demo policy: Send workplace services a short list of needed supplies and the business purpose. Bulk or specialist purchases may need manager approval before ordering.",
+      "keywords": "stationery office supplies notebook pen order request purchase"
+    },
+    {
+      "id": "workplace-09",
+      "category": "Workplace services",
+      "question": "Can I bring a personal guest to a company event?",
+      "answer": "Demo policy: Check the event invitation for guest eligibility and registration limits. Ask the organizer before bringing someone who is not included in the invitation.",
+      "keywords": "company event personal guest family invitation attend registration"
+    },
+    {
+      "id": "workplace-10",
+      "category": "Workplace services",
+      "question": "How do I share feedback about the workplace?",
+      "answer": "Demo policy: Use the employee feedback channel or contact workplace services with a specific suggestion and its impact. Sensitive employee concerns should go to HR through the appropriate confidential process.",
+      "keywords": "workplace office feedback suggestion facilities improve employee experience"
+    },
+    {
+      "id": "workplace-11",
+      "category": "Workplace services",
+      "question": "Who should I contact about an office delivery?",
+      "answer": "Demo policy: Ask reception or workplace services about receiving business deliveries and use the approved site address format. Avoid sending sensitive employee documents through an unverified delivery process.",
+      "keywords": "office delivery parcel courier package reception business mail"
+    },
+    {
+      "id": "workplace-12",
+      "category": "Workplace services",
+      "question": "Can I book an office desk for a hybrid day?",
+      "answer": "Demo policy: Use the site's desk reservation process if one is available, or ask workplace services for a seat. Release unused reservations and check any team seating or accessibility requirements before arrival.",
+      "keywords": "book reserve office desk hybrid hotdesk seat workplace reservation"
+    }
+  ]
+}
