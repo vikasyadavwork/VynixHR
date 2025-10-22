@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { createJSONStorage, persist } from "zustand/middleware";
 
 type State = {
   token: string | null;
@@ -23,6 +23,6 @@ export const useAuthStore = create<State & Action>()(
         set({ token: null, isLoggedIn: false });
       },
     }),
-    { name: "session" },
+    { name: "vynixhr-session", storage: createJSONStorage(() => sessionStorage) },
   ),
 );

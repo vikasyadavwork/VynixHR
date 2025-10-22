@@ -10,11 +10,11 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // Add SWC configuration for React
-  esbuild: {
-    jsxFactory: "React.createElement",
-    jsxFragment: "React.Fragment",
-    jsxInject: `import React from 'react'`,
+  server: {
+    host: "127.0.0.1",
+    port: 5173,
+    strictPort: true,
+    proxy: { "/api": { target: "http://127.0.0.1:5000", changeOrigin: true } },
   },
   optimizeDeps: {
     include: ["react", "react-dom"],
@@ -24,17 +24,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           react: ["react", "react-dom"],
-        },
-      },
-    },
-  },
-  // SWC-specific configuration
-  swc: {
-    jsc: {
-      transform: {
-        react: {
-          throwIfNamespace: false, // Disable namespace errors
-          runtime: "automatic", // Use the new JSX runtime
         },
       },
     },

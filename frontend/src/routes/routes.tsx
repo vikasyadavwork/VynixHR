@@ -1,23 +1,30 @@
-import { createBrowserRouter } from "react-router-dom";
-import { LandingRoot } from "./landing/root";
-import { HomePage } from "./landing/home/page";
-import { DashboardRoot } from "./dashboard/root";
-import { DashboardHomePage } from "./dashboard/page";
-import { AboutPage } from "./about/page"; // Import the AboutPage component
+import { createBrowserRouter, Navigate } from "react-router-dom";
+import { Login, Workspace } from "@/hr/App";
+import { Dashboard } from "@/hr/Dashboard";
+import { Employees } from "@/hr/Employees";
+import { Attendance } from "@/hr/Attendance";
+import { Leaves } from "@/hr/Leaves";
+import { Recruitment } from "@/hr/Recruitment";
+import { Assistant } from "@/hr/Assistant";
+import { Announcements } from "@/hr/Announcements";
+import { Settings } from "@/hr/Settings";
+import { Tasks } from "@/hr/Tasks";
 
 export const router = createBrowserRouter([
+  { path: "/", element: <Login /> },
   {
-    path: "/",
-    element: <LandingRoot />,
-    children: [{ index: true, element: <HomePage /> }],
+    element: <Workspace />,
+    children: [
+      { path: "/dashboard", element: <Dashboard /> },
+      { path: "/employees", element: <Employees /> },
+      { path: "/attendance", element: <Attendance /> },
+      { path: "/leaves", element: <Leaves /> },
+      { path: "/recruitment", element: <Recruitment /> },
+      { path: "/assistant", element: <Assistant /> },
+      { path: "/announcements", element: <Announcements /> },
+      { path: "/settings", element: <Settings /> },
+      { path: "/tasks", element: <Tasks /> },
+    ],
   },
-  {
-    path: "/dashboard",
-    element: <DashboardRoot />,
-    children: [{ index: true, element: <DashboardHomePage /> }],
-  },
-  {
-    path: "/about", // Define the About route
-    element: <AboutPage />,
-  },
+  { path: "*", element: <Navigate to="/dashboard" replace /> },
 ]);

@@ -3,10 +3,7 @@ export type Tag = {
   name: string;
 };
 
-export type Status =
-  | "TaskStatus.PENDING"
-  | "TaskStatus.IN_PROGRESS"
-  | "TaskStatus.COMPLETED";
+export type Status = "TaskStatus.PENDING" | "TaskStatus.IN_PROGRESS" | "TaskStatus.COMPLETED";
 
 export type Task = {
   id: number;
