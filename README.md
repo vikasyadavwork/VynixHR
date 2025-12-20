@@ -1,187 +1,100 @@
-# EmPulseHR App built with Flask and ReactJS
+# VynixHR
 
-## Table of contents
+A local HR workspace for managing people, attendance, leave, recruitment, and everyday HR questions. Built with React, TypeScript, Flask, SQLite, and a locally trained FAQ retrieval model.
 
-- [Built with](#built-with)
-- [Project requirements and how to use it](#project-requirements-and-how-to-use-it)
-  - [Frontend](#frontend)
-  - [Backend](#backend)
-  - [REST API](#rest-api)
-- [Image gallery](#image-gallery)
-  - [REST API](#rest-api-preview)
-  - [Frontend](#frontend-preview)
+## Start everything
 
-## Built with
+Install **Python 3.11+** and **Node.js 20.19+**, then run:
 
-The project was developed from scratch with Frontend and Backend technologies, for the communication between the client and the server I implemented a REST API, which is responsible for returning the necessary data in JSON format to the client:
-
-- Frontend:
-  - ReactJS
-  - TypeScript
-  - TailwindCSS
-  - Axios
-  - ShadcnUI
-  - React Router Dom
-  - React Hook Form
-  - Zustand
-  - React Query
-
-- Backend:
-  - Python (Flask)
-  - SQLite (As database manager)
-  - Flask Migrate (To perform migrations)
-  - SQLAlchemy and Flask SQLAlchemy (Python SQL toolkit and ORM that gives application developers the full power and flexibility of SQL)
-  - REST API (For communication between client and server)
-  - SwaggerUI
-  - Flask Smorest (Used for rest api creation and schema creation)
-  - Flask JWT Extended (For the creation of JWT)
-  - MVC (Software Design Pattern)
-
-## Project requirements and how to use it
-
-For the project you must run both development environments at the same time, both the Frontend and the Backend. In the Frontend you will find JavaScript technologies (ReactJS) and in the Backend you will find Python technologies and tools (Flask), so you must have NodeJS and Python installed on your computer (As a reference this project was developed with version 3.13.0 of Python and 22.11.0 of NodeJS).
-
-I leave you links to NodeJS and Python for installation:
-  - [NodeJS website](https://nodejs.org/en/)
-  - [Python website](https://www.python.org/)
-
-First of all download the project to start using it, do it from the terminal:
-
-```shell
-
+```sh
+git clone https://github.com/vikasyadavwork/VynixHR.git
+cd VynixHR
+python start.py
 ```
 
-If you did it correctly and there were no problems, you should see these folders:
+On Windows you can also double-click **start.bat**.
 
-```shell
-/backend
-/frontend
-/preview
-README.md
+The launcher creates a Python environment, installs locked dependencies, creates local settings with a random session secret, prepares SQLite, seeds fictional employees, trains the assistant, and starts all services. It opens **http://127.0.0.1:5173** when everything is ready. Press **Ctrl+C** in the launcher terminal to stop the entire app.
+
+Internet access is needed for the first dependency installation. The app and FAQ assistant run locally afterward. SQLite is embedded in the backend, so there is no separate database installation or Docker requirement.
+
+**Demo account:** `admin@vynixhr.local` / `Welcome@123`
+
+This is a public demonstration account. All seeded people and company policies are fictional. Use a separate secured configuration and replace demo accounts and policies before adapting this project for an organization.
+
+## Features
+
+- **Dashboard:** workforce totals, attendance trends, departments, recent hires, and upcoming events from the database.
+- **Employee directory:** 28 fictional sample employees, searchable profiles, department and status filters, add/edit forms, employee details, CSV export, and soft archiving.
+- **Attendance:** date-based records, office/remote work modes, check-in and check-out, with company timezone handling.
+- **Time off:** leave requests, date validation, pending requests, and approve/reject workflows.
+- **Recruitment:** open positions and an applicant pipeline with stage updates.
+- **HR assistant:** local FAQ answers with source attribution, confidence, suggested questions, and an honest fallback when no reliable policy matches.
+- **Workspace:** company settings, announcements, and personal tasks with create/edit/delete and status filters.
+- **Interface:** responsive layouts, accessible dialogs, search, empty/loading/error states, and reduced-motion support.
+- **Access control:** signed sessions, explicit HR roles, and ownership checks for personal tasks and employee actions.
+
+## Local AI training
+
+The assistant is a **trained retrieval model**, not a generative large language model. It learns a searchable representation of the supplied FAQ dataset and returns a vetted answer from a matching source. This keeps it small, inspectable, repeatable, and usable without a GPU or paid API.
+
+```sh
+python ai/train.py
+python ai/serve.py --host 127.0.0.1 --port 5001
 ```
 
-### Frontend
+Edit the questions, answers, and training phrases in `ai/data/faqs.json`, retrain, and restart the assistant. The generated model lives in `ai/model/` and is deliberately excluded from Git. The dataset contains 168 distinct demonstration HR questions across 14 topics; see [the AI guide](ai/README.md) for its training method, evaluation, and limitations.
 
-If you already have NodeJS installed on your computer perform the following steps to run the Frontend (Remember that the Backend must be running):
+Questions about an individual's salary, leave balance, or other private records cannot be answered from generic policies. The assistant refers these requests to HR. Model confidence is a similarity score, not a guarantee that an answer is correct.
 
-1. Move to the `/frontend` folder and run the following command to install the necessary:
+## Commands
 
-```shell
-# This will install what you need for the Frontend (npm comes with NodeJS after installation)
-$ npm install
+| Command | Purpose |
+| --- | --- |
+| `python start.py` | Set up and launch the complete app |
+| `python start.py --setup-only` | Install dependencies, create/seed the database, and train AI |
+| `python start.py --skip-install` | Launch using already installed dependencies |
+| `python start.py --no-browser` | Launch without opening a tab |
+| `python start.py --skip-install --smoke-test` | Start everything, verify the integration, then stop |
+| `python scripts/check.py` | Run backend/AI tests, frontend lint/format checks, and the production build |
+| `python ai/train.py` | Retrain the local FAQ model |
+
+Dependency installation is skipped when the recorded requirements and lockfile have not changed. Seeding is repeatable and does not reset edited employee records. If a required port is occupied, the launcher reports it instead of terminating another process.
+
+## Project structure
+
+```text
+VynixHR/
+  frontend/          React + TypeScript workspace
+  backend/           Flask routes, models, validation, seed data, and tests
+  ai/                FAQ dataset, local training, inference server, and tests
+  scripts/check.py   Shared local/CI verification command
+  start.py           Cross-platform setup and process supervisor
+  start.bat          Windows double-click entry point
+  docs/              Architecture and project-history notes
 ```
 
-2. Then you will need to run the following command to start running the Frontend:
+| Service | Address |
+| --- | --- |
+| Frontend | http://127.0.0.1:5173 |
+| Backend API | http://127.0.0.1:5000/api/v1 |
+| Original task API documentation | http://127.0.0.1:5000/docs |
+| Local AI health | http://127.0.0.1:5001/health |
 
-```shell
-$ npm run dev
+The Vite development server proxies `/api` requests to Flask. Flask authorizes chat requests and calls the local AI service with a timeout. Runtime logs are in `.runtime/`; the default database is `backend/instance/vynixhr.db`. Both locations are excluded from Git.
 
-# You will see something like this:
-VITE v5.4.11  ready in 349 ms
+The launcher creates `backend/.env` if it does not exist and preserves an existing configuration. Available configuration keys are listed in `backend/.env.example`. Do not commit secrets or local databases.
 
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
-  ➜  press h + enter to show help
-```
+## Troubleshooting
 
-3. That's all for the Frontend, if you haven't run the Backend yet, continue with the next section (Backend)
+- **A port is occupied:** stop the earlier VynixHR launcher or the application using port 5173, 5000, or 5001, then retry.
+- **A service fails:** inspect `.runtime/frontend.log`, `.runtime/backend.log`, or `.runtime/ai.log`.
+- **Python or npm is missing:** install the prerequisite, reopen your terminal, and retry.
+- **The assistant is offline:** restart `python start.py`; the launcher retrains the model before starting it.
+- **Custom database settings fail:** inspect your own `backend/.env`. A new checkout uses SQLite automatically.
 
-### Backend
+## Development and attribution
 
-If you already have Python installed on your computer perform the following steps to run the Backend
+This project extends the EmPulseHR Flask/React starter from **AetherXTech/EmPulseHR**. The starter README credits **Santiago de Jesus Moraga Caldera (Remy349)**; that attribution is retained here. The HR workspace, local FAQ assistant, launch tooling, and verification were added for VynixHR.
 
-1. Move to the `/backend` folder and run the following command to create a virtual development environment with Python:
-
-```shell
-# If it doesn't work this way try "python3", this will depend on how you installed Python on your computer
-$ python -m venv venv
-```
-
-2. Now activate the development environment and install the necessary requirements found in the `requirements.txt` file:
-
-```shell
-# This is how it is done in Linux, in Windows it is as follows "venv\Scripts\activate"
-$ . venv/bin/activate
-# Now install the necessary requirements using "pip" or "pip3",
-# this will depend on how you installed Python on your computer
-(venv) $ pip install -r requirements.txt
-```
-
-3. Create an .env file and add an environment variable for JWT creation:
-
-```shell
-# This is an example
-JWT_SECRET_KEY="replace-with-a-random-local-secret"
-```
-
-4. Now you can start running the server:
-
-```shell
-(venv) $ flask run
-
-# You will see something like this:
-* Serving Flask app 'application.py'
- * Debug mode: on
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:5000
-Press CTRL+C to quit
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 140-954-082
-```
-
-5. Visit the path where the Swagger interface is located to see all the api endpoints:
-
-`http://localhost:5000/docs`
-
-With this you will have your Python environment ready to work, it also has a database so you don't have to worry about that and it already has some data already entered so you can interact with the REST API.
-
-But if you want to start blank with no previously stored data delete the database and run the following command to create a new database (This step is optional):
-
-```shell
-# This will create a new database with the necessary tables to store the data 
-# if you want to know the table structure have a look at the "/flaskr/models" folder.
-(venv) $ flask db upgrade
-```
-
-After you have done the previous step add some default data for the task labels. Do this by running the following command in the terminal:
-
-```shell
-python seed.py
-```
-
-### REST API
-
-Everything related to the API is inside `flaskr/routes`. The following table summarizes the routes that were implemented:
-
-| HTTP Method | Resource URL            | Notes                                   |
-| ----------- | ----------------------- | --------------------------------------- |
-| `POST`      | */api/v1/auth/sign-in*  | Auth user and create JWT                |
-| `GET`       | */api/v1/users*         | Get a list of all users                 |
-| `POST`      | */api/v1/users*         | Create a new user                       |
-| `GET`       | */api/v1/users/id*      | Get a single user by id                 |
-| `DELETE`    | */api/v1/users/account* | Delete a user account                   |
-| `GET`       | */api/v1/tags*          | Get a list of tags                      |
-| `POST`      | */api/v1/tags*          | Create a new tag                        |
-| `POST`      | */api/v1/tasks*         | Create a new task                       |
-| `GET`       | */api/v1/tasks/user*    | Get a list of all tasks on user         |
-| `PUT`       | */api/v1/tasks/id*      | Update a task                           |
-| `DELETE`    | */api/v1/tasks/id*      | Delete a task                           |
-
-## Image gallery
-
-### REST API Preview:
-
-![PREVIEW](./preview/preview1.png)
-![PREVIEW](./preview/preview2.png)
-
-### Frontend Preview
-
-![PREVIEW](./preview/preview3.png)
-![PREVIEW](./preview/preview4.png)
-![PREVIEW](./preview/preview5.png)
-![PREVIEW](./preview/preview6.png)
-![PREVIEW](./preview/preview7.png)
-![PREVIEW](./preview/preview8.png)
-
-### Developed by Santiago de Jesús Moraga Caldera - Remy349(GitHub)
+The July–December 2025 Git milestones are a **reconstructed development timeline**, created in September 2026 at the project owner's request. They describe implementation stages and do not claim contemporaneous work. See [project history](docs/PROJECT_HISTORY.md).

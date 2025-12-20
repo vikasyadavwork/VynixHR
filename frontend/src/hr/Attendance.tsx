@@ -1,14 +1,15 @@
 import { useState, type FormEvent } from "react";
 import { CalendarDays, Check, Clock3, Home, LogIn, LogOut, Search, Users } from "lucide-react";
-import { api, formatDate, json, today, useAction, useApi } from "./api";
+import { api, formatDate, json, useAction, useApi } from "./api";
 import type { AttendanceData, CurrentUser, Directory } from "./types";
 import { Avatar, Badge, Button, Empty, ErrorState, Loading, Modal, PageTitle } from "./ui";
 
 export function Attendance() {
-  const [date, setDate] = useState(today());
+  // Let the API choose today using the workspace timezone, not the browser clock.
+  const [date, setDate] = useState("");
   const [search, setSearch] = useState("");
   const [action, setAction] = useState<"check-in" | "check-out" | null>(null);
-  const query = useApi<AttendanceData>(`/hr/attendance?date=${date}`);
+  const query = useApi<AttendanceData>(date ? `/hr/attendance?date=${date}` : "/hr/attendance");
   const { data: directory } = useApi<Directory>("/hr/employees");
   const { data: current } = useApi<CurrentUser>("/hr/me");
   const save = useAction(
@@ -45,7 +46,7 @@ export function Attendance() {
       {
         onSuccess: () => {
           setAction(null);
-          setDate(today());
+          setDate("");
         },
       },
     );
@@ -80,7 +81,7 @@ export function Attendance() {
               </span>
             </div>
             <strong className="metric-value">{value}</strong>
-            <div className="metric-detail">People · {formatDate(date, true)}</div>
+            <div className="metric-detail">People · {formatDate(query.data.date, true)}</div>
           </div>
         ))}
       </div>
@@ -94,7 +95,7 @@ export function Attendance() {
             <CalendarDays size={16} />
             <input
               type="date"
-              value={date}
+              value={query.data.date}
               onChange={(event) => {
                 if (event.target.value) setDate(event.target.value);
               }}
@@ -170,7 +171,7 @@ export function Attendance() {
         open={Boolean(action)}
         onClose={() => setAction(null)}
         title={action === "check-in" ? "Let’s start a good workday." : "That’s a wrap for today."}
-        description={`Record a ${action} for ${formatDate(today())}.`}
+        description={`Record a ${action} for today in the workspace timezone.`}
       >
         <form onSubmit={submit}>
           <label className="field">

@@ -3408,11 +3408,13 @@ td,
 @media (max-width: 800px) {
   .sidebar {
     transform: translateX(-100%);
+    visibility: hidden;
     transition: transform 0.2s ease;
     width: 235px;
   }
   .sidebar-open {
     transform: translateX(0);
+    visibility: visible;
   }
   .sidebar-scrim {
     position: fixed;

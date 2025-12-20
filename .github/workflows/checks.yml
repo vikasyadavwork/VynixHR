@@ -1,0 +1,32 @@
+name: Check VynixHR
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Prepare database, dependencies, and local AI
+        run: python start.py --setup-only
+      - name: Run tests, lint, and production build
+        run: python scripts/check.py
+      - name: Start and stop the complete application
+        run: python start.py --skip-install --smoke-test --no-browser
