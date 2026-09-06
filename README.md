@@ -92,9 +92,3 @@ The launcher creates `backend/.env` if it does not exist and preserves an existi
 - **Python or npm is missing:** install the prerequisite, reopen your terminal, and retry.
 - **The assistant is offline:** restart `python start.py`; the launcher retrains the model before starting it.
 - **Custom database settings fail:** inspect your own `backend/.env`. A new checkout uses SQLite automatically.
-
-## Development and attribution
-
-This project extends the EmPulseHR Flask/React starter from **AetherXTech/EmPulseHR**. The starter README credits **Santiago de Jesus Moraga Caldera (Remy349)**; that attribution is retained here. The HR workspace, local FAQ assistant, launch tooling, and verification were added for VynixHR.
-
-The July–December 2025 Git milestones are a **reconstructed development timeline**, created in September 2026 at the project owner's request. They describe implementation stages and do not claim contemporaneous work. See [project history](docs/PROJECT_HISTORY.md).
